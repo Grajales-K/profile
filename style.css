@@ -29,6 +29,7 @@ body, html {
     background: var(--background);
     color: var(--text);
     font-family: var(--font);
+    text-align: center;
 }
 
 img {
@@ -41,8 +42,20 @@ a {
     color: var(--text);
 }
 
+ul {
+    list-style-position: inside; /*  move the dots to align with the text*/
+    padding-left: 0; /* deleted the padding  */
+    display: inline-block; /* help to manipulate and behave the <ul> as element in line  */
+    text-align: left; /* align the text inside of the <ul> */
+}
+
+li {
+    text-align: left; /* make each <li> aling to the left side in the <ul> */
+}
+
+
 input {
-    display: block;
+    /* display: block; */
     margin: 20px 0 0;
     width: 160px;
     box-sizing: border-box;
@@ -68,7 +81,7 @@ button {
     color: var(--background);
     font-weight: bold;
     box-sizing: border-box;
-    display: block;
+    /* display: block; */
     margin: 8px 0;
     cursor: pointer;
     font-family: var(--font);
